@@ -1,0 +1,391 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 20,
+        "name": "Usuario chama a API para obter todos os filmes por titulo",
+        "description": "",
+        "id": "obter-todos-os-filmes-por-titulo;usuario-chama-a-api-para-obter-todos-os-filmes-por-titulo;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4114586800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que o usuario se conecta na API com codigo de retorno igual a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 62
+                }
+              ],
+              "location": "API_StepDefinitions.que_o_usuario_se_conecta_na_API_com_codigo_de_retorno_igual_a(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8118018700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "o usuario busca por filmes",
+            "match": {
+              "location": "API_StepDefinitions.o_usuario_busca_filmes_por_titulos(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "filmes",
+                  "ID"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "A New Hope",
+                  "0"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Attack of the Clones",
+                  "1"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "The Phantom Menace",
+                  "2"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Revenge of the Sith",
+                  "3"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Return of the Jedi",
+                  "4"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "The Empire Strikes Back",
+                  "5"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "The Force Awakens",
+                  "6"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1124222000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a API retorna todos os titulos dos filmes",
+            "match": {
+              "location": "API_StepDefinitions.a_API_retorna_todos_os_titulos_dos_filmes()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@tag"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Usuario chama a API para obter todos os filmes por diretor e produtor",
+        "description": "",
+        "id": "obter-todos-os-filmes-por-titulo;usuario-chama-a-api-para-obter-todos-os-filmes-por-diretor-e-produtor;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1843082600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que o usuario se conecta na API com codigo de retorno igual a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 62
+                }
+              ],
+              "location": "API_StepDefinitions.que_o_usuario_se_conecta_na_API_com_codigo_de_retorno_igual_a(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1058040100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "o usuario busca filmes por criteria \"George Lucas\" \"Rick McCallum\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "George Lucas",
+                  "offset": 37
+                },
+                {
+                  "val": "Rick McCallum",
+                  "offset": 52
+                }
+              ],
+              "location": "API_StepDefinitions.o_usuario_busca_filmes_por_criteria(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1294708300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "a API retorna todos os titulos de filmes por criteria \"George Lucas\" \"Rick McCallum\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "George Lucas",
+                  "offset": 55
+                },
+                {
+                  "val": "Rick McCallum",
+                  "offset": 70
+                }
+              ],
+              "location": "API_StepDefinitions.a_API_retorna_todos_os_titulos_de_filmes_por_criteria(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@tag"
+          },
+          {
+            "line": 22,
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Obter todos os filmes por titulo",
+    "description": "",
+    "id": "obter-todos-os-filmes-por-titulo",
+    "keyword": "Feature",
+    "uri": "api.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@tag"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Usuario acessa o website de tasks e se registra",
+        "description": "",
+        "id": "acessar-o-webiste-de-tasks-gerar-uma-task-e-visualiza-la;usuario-acessa-o-website-de-tasks-e-se-registra;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11129016100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que o usuario abre o website de criacao de tasks",
+            "match": {
+              "location": "FE_StepDefinitions.que_o_usuario_abre_o_website_de_criacao_de_tasks()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 845076000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "o usuario faz o registro no website passando \"Elizeu\" \"ebrito\" e \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elizeu",
+                  "offset": 46
+                },
+                {
+                  "val": "ebrito",
+                  "offset": 55
+                },
+                {
+                  "val": "123456",
+                  "offset": 66
+                }
+              ],
+              "location": "FE_StepDefinitions.o_usuario_faz_o_registro_no_website_passando_e(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 563159600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "o usuario de nome \"Elizeu\" eh registrado com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Elizeu",
+                  "offset": 19
+                }
+              ],
+              "location": "FE_StepDefinitions.o_usuario_de_nome_eh_registrado_com_sucesso(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1412930900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "o usuario cria uma task com titulo \"Minha task\" e detalhe \"Criar wesite\" e marca a task com status \"Not\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Minha task",
+                  "offset": 36
+                },
+                {
+                  "val": "Criar wesite",
+                  "offset": 59
+                },
+                {
+                  "val": "Not",
+                  "offset": 100
+                }
+              ],
+              "location": "FE_StepDefinitions.o_usuario_cria_uma_task_com_titulo_e_detalhe_e_marca_a_task_com_status(String,String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4,
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 979087700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o usuario visualiza sua task criada com sucesso com o titulo \"Minha task\" e com o detalhe \"Criar wesite\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Minha task",
+                  "offset": 62
+                },
+                {
+                  "val": "Criar wesite",
+                  "offset": 91
+                }
+              ],
+              "location": "FE_StepDefinitions.o_usuario_visualiza_sua_task_criada_com_sucesso_com_o_titulo_e_com_o_detalhe(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@tag"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Acessar o webiste de tasks gerar uma task e visualiza-la",
+    "description": "",
+    "id": "acessar-o-webiste-de-tasks-gerar-uma-task-e-visualiza-la",
+    "keyword": "Feature",
+    "uri": "front_app.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@tag"
+      }
+    ]
+  }
+]
