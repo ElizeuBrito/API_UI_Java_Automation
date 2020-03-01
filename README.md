@@ -33,15 +33,16 @@ Dica: No intellij Idea basta apenas importar o arquivo pom.xml.
 Segue esquema, para melhor entendimento:
 
 
- ┌───────────── minute (0 - 59)
- │ ┌───────────── hour (0 - 23)
- │ │ ┌───────────── day of month (1 - 31)
- │ │ │ ┌───────────── month (1 - 12)
- │ │ │ │ ┌───────────── day of week (0 - 6) (Sunday to Saturday;
- │ │ │ │ │                                       7 is also Sunday on some systems)
+ minute (0 - 59)
+ │ hour (0 - 23)
+ │ │ day of month (1 - 31)
+ │ │ │ month (1 - 12)
+ │ │ │ │ day of week (0 - 6) (Sunday to Saturday
+ │ │ │ │ │                                       
  │ │ │ │ │
  │ │ │ │ │
  * * * * *  schedule command to execute
+ (7 is also Sunday on some systems)
  
  Basicamente, tudo isso!!! :)
 
