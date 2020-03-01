@@ -24,25 +24,20 @@ Dica: No intellij Idea basta apenas importar o arquivo pom.xml.
 
 2- Caso queira rodar o projeto no Jenkins, crie um Job (projeto free style), aponte para o repositório do Git, configure o Maven e pronto. Após isso basta apenas rodar o Job e a automação do contrato e do front end serão executados com sucesso. Caso queira que a build rode duas vezes por dia, após criar a build, clique em "Configurar", vá para "Trigger de builds", marque a opção "Construir periodicamente" e preencha o campo "Agenda" com a seguinte informação: 00 0,12 * * 0-6. Isso indica que a build automatizada será rodada todos os dias de segunda a segunda meia noite e meio dia, onde:
 
-00 0 -> Indica meia noite
-12 -> Indica meio dia
-* -> Indica vazio para dia do mês
-* -> Indica vazio para mês
-0 - 6 -> De segunda a segunda
+- 00 0 -> Indica meia noite
+- 12 -> Indica meio dia
+- * -> Indica vazio para dia do mês
+- * -> Indica vazio para mês
+- 0 - 6 -> De segunda a segunda
 
 Segue esquema, para melhor entendimento:
 
-
- minute (0 - 59)
- │ hour (0 - 23)
- │ │ day of month (1 - 31)
- │ │ │ month (1 - 12)
- │ │ │ │ day of week (0 - 6) (Sunday to Saturday
- │ │ │ │ │                                       
- │ │ │ │ │
- │ │ │ │ │
- * * * * *  schedule command to execute
- (7 is also Sunday on some systems)
+ - minute (0 - 59)
+ - hour (0 - 23)
+ - day of month (1 - 31)
+ - month (1 - 12)
+ - day of week (0 - 6) (Sunday to Saturday                                   
+ - (7 is also Sunday on some systems)
  
  Basicamente, tudo isso!!! :)
 
