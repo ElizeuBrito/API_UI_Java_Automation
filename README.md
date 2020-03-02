@@ -42,3 +42,18 @@ Segue esquema, para melhor entendimento:
  Basicamente, tudo isso!!! :)
 
 Dúvidas, fiquem a vontade em me contatar através do email: elizeu.brito@gmail.com
+
+- Perguntas teóricas do teste
+
+1.	O software de função de engenheiro de qualidade mudou muito nos últimos anos. Atualmente, como você pode definir a importância desse papel?
+Resposta:
+No meu ponto de vista, acredito que hoje o Engenheiro de Qualidade deve ser proficiente em uma série de coisas. Nos últimos anos tenho observado que o Engenheiro de Qualidade precisou não apenas ter o conhecimento de como testar o software (aplicando as melhores práticas da escola/cultura de QA), mas também precisou se adaptar a uma nova realidade de qualidade de software, por exemplo:
+- Hoje um Engenheiro de Qualidade de software deve ser capaz de trabalhar em equipes multidisciplinares, com metodologias ágeis (scrum), e se adequar a tão falada transformação digital.
+- O Engenheiro de Qualidade de software deve ser capaz de automatizar testes (regressivos, funcionais), deve ser proficiente em progração para tal. Neste item, penso que o que forma um bom automatizador de testes, é que o mesmo tenha passado por vários processos/fluxos de testes manuais/funcionais. Cultura de QA é uma bagagem e tanto para o Engenheiro que vai automatizar qualquer sitema, seja ele front end, back end ou sistema de contratos.
+- Tambem não poderia deixar de mencionar a questão do idioma. O Engenheiro de Qualidade que tiver mais de um idioma, com certeza irá se destacar mais, principalmente o idioma Inglês, dado o vasto conteúdo de qualidade (QA) existente na internet, bem como o vasto número de empresas estrangeiras (seja ela da américa ou não, porque o Inglês é universal) trabalhando fortemente com qualidade de software, Engenheiros de Qualidade, SDETs (Software Development Engineer in Test).
+- O Engenheiro de Qualidade também deve se aprofundar no estudo de metodologias ágeis, que é uma tendência atualmente.
+
+2.	Imagine que você está em nossa equipe, trabalhando com automação de testes, pensando em cenários de teste, realizando testes de desempenho e outras coisas relacionadas à qualidade do software. Como você avaliaria se este software tem qualidade ou não?
+Resposta:
+Eu avalio se um software tem qualidade ou não quando o mesmo atende aos critérios de aceite elucidados durante o desenvolvimento dos épicos e das histórias. O sofware deve realizar exatamente o que foi definido pelo Product Owner e aprovado por toda a equipe (Gestores, Scrum Master, Testadores, Engenheiros de Qualidade, Analistas, Cliente).
+Ou seja, o output deve atender o input, seja o teste realizado manualmente ou automaticamente.
