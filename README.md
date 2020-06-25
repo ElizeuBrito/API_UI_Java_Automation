@@ -1,4 +1,4 @@
-# API_UI_Java_Automation - Teste Inmetrics
+# API_UI_Java_Automation
 
 Este projeto de automação de testes contem cenários escritos em BDD e contemplam automação de contratos (API) e automação de fron end. O framework foi construído utilizando as seguintes tecnologias e padrões:
 
